@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vulnerability Detector</title>
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 15px;
+      overflow-y: scroll;
+      max-height: 500px;
+    }
+
+    button {
+      width: 100%;
+      padding: 5px;
+    }
+
+    body::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, .5);
+      box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+
+    #vulnerabilityList {
+      height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>VulnSnoop</h1>
+  <button id="checkVulnerabilities">Check Vulnerabilities</button>
+  <div id="vulnerabilityList"
+    style="height: 300px; overflow-y: auto; border: 1px solid #ccc; margin-top: 10px; padding: 5px;">
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
